@@ -195,70 +195,65 @@
     counters.forEach(function (el) { observer.observe(el); });
   }
 
-  /* ---------- Rotating job title (typewriter) ---------- */
+  /* ---------- Hero title typewriter ---------- */
   function initTypewriter() {
-    var el = document.querySelector('.typewriter');
-    if (!el) return;
+    var wrap = document.querySelector('.hero-title.typewriter');
+    if (!wrap) return;
 
-    var roles;
-    try {
-      roles = JSON.parse(el.getAttribute('data-roles'));
-    } catch (e) {
-      return; // malformed list: leave the static text in place
+    var parts = Array.prototype.slice.call(wrap.querySelectorAll('.tw'));
+    if (!parts.length) return;
+
+    // The real text lives in the HTML so it survives with JS disabled and is
+    // there for crawlers. Capture it, then blank the spans before revealing.
+    var segments = parts.map(function (el) {
+      return { el: el, text: el.textContent };
+    });
+
+    function reveal() {
+      segments.forEach(function (s) { s.el.style.visibility = 'visible'; });
     }
-    if (!Array.isArray(roles) || roles.length < 2) return;
 
-    // Reduced motion: keep the first role, no cycling.
-    if (reduceMotion) return;
+    if (reduceMotion) {
+      reveal();
+      return;
+    }
 
-    var TYPE_MS = 70;      // per character while typing
-    var DELETE_MS = 38;    // per character while deleting
-    var HOLD_FULL = 1900;  // pause on a complete word
-    var HOLD_EMPTY = 320;  // pause before the next word
+    segments.forEach(function (s) { s.el.textContent = ''; });
+    reveal();
 
-    var index = 0;
-    var chars = roles[0].length;
-    var deleting = true;   // the first role is already rendered, so erase it first
+    var TYPE_MS = 55;   // per character
+    var START_MS = 450; // beat before the first character
+
+    var seg = 0;
+    var chars = 0;
     var timer = null;
 
     function tick() {
-      var word = roles[index];
-
-      if (deleting) {
-        chars -= 1;
-        el.textContent = word.slice(0, chars);
-        if (chars === 0) {
-          deleting = false;
-          index = (index + 1) % roles.length;
-          timer = setTimeout(tick, HOLD_EMPTY);
-          return;
-        }
-        timer = setTimeout(tick, DELETE_MS);
-        return;
-      }
+      var current = segments[seg];
 
       chars += 1;
-      el.textContent = word.slice(0, chars);
-      if (chars === word.length) {
-        deleting = true;
-        timer = setTimeout(tick, HOLD_FULL);
-        return;
+      current.el.textContent = current.text.slice(0, chars);
+
+      if (chars >= current.text.length) {
+        seg += 1;
+        chars = 0;
+        if (seg >= segments.length) return; // sentence complete, caret keeps blinking
       }
+
       timer = setTimeout(tick, TYPE_MS);
     }
 
-    // Pause while the tab is hidden so it does not race through the list
-    // in the background and resume mid-word on return.
+    // Background tabs throttle timers; pause rather than resume mid-word.
     document.addEventListener('visibilitychange', function () {
       if (document.hidden) {
         clearTimeout(timer);
-      } else {
+      } else if (seg < segments.length) {
         clearTimeout(timer);
-        timer = setTimeout(tick, 400);
+        timer = setTimeout(tick, 300);
       }
     });
 
-    timer = setTimeout(tick, HOLD_FULL);
+    timer = setTimeout(tick, START_MS);
   }
 
   /* ---------- Footer year ---------- */

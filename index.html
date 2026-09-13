@@ -29,6 +29,9 @@
                 var t = localStorage.getItem('theme');
                 if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
             } catch (e) {}
+            // Lets CSS hide the hero title until the typewriter starts, so the
+            // finished sentence never flashes on screen first.
+            document.documentElement.classList.add('js');
         })();
     </script>
 </head>
@@ -85,10 +88,8 @@
 
         <h1 class="hero-name">Mahrane AMOR</h1>
 
-        <p class="hero-title">
-            Data Science Engineering Student &amp;
-            <span class="highlight typewriter"
-                  data-roles='["AI Engineer","Machine Learning Engineer","Agentic AI Developer","Data Scientist","MLOps Practitioner"]'>AI Engineer</span><span class="caret" aria-hidden="true"></span>
+        <p class="hero-title typewriter">
+            <span class="tw tw-lead">Data Science Engineering Student &amp; </span><span class="tw tw-role highlight">MLOps Enthusiast</span><span class="caret" aria-hidden="true"></span>
         </p>
 
         <p class="hero-subtitle">

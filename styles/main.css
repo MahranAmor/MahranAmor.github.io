@@ -410,6 +410,10 @@ ul { margin: 0; padding: 0; }
   color: transparent;
 }
 
+/* Hidden only while JS is available, so the sentence is not briefly shown
+   complete before the typewriter blanks it. Without JS it stays visible. */
+.js .hero-title .tw { visibility: hidden; }
+
 /* Typewriter caret. Sits outside .highlight so the gradient text-clip
    does not make it invisible. */
 .hero-title .caret {
