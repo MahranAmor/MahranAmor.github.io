@@ -196,9 +196,15 @@
   }
 
   /* ---------- Hero title typewriter ---------- */
+  var typeTimer = null;
+  var visibilityBound = false;
+
   function initTypewriter() {
     var wrap = document.querySelector('.hero-title.typewriter');
     if (!wrap) return;
+
+    // A language switch re-runs this; stop the previous run first.
+    clearTimeout(typeTimer);
 
     var parts = Array.prototype.slice.call(wrap.querySelectorAll('.tw'));
     if (!parts.length) return;
@@ -226,7 +232,6 @@
 
     var seg = 0;
     var chars = 0;
-    var timer = null;
 
     function tick() {
       var current = segments[seg];
@@ -240,20 +245,26 @@
         if (seg >= segments.length) return; // sentence complete, caret keeps blinking
       }
 
-      timer = setTimeout(tick, TYPE_MS);
+      typeTimer = setTimeout(tick, TYPE_MS);
     }
 
     // Background tabs throttle timers; pause rather than resume mid-word.
-    document.addEventListener('visibilitychange', function () {
-      if (document.hidden) {
-        clearTimeout(timer);
-      } else if (seg < segments.length) {
-        clearTimeout(timer);
-        timer = setTimeout(tick, 300);
-      }
-    });
+    // Bound once: initTypewriter also runs again on every language change.
+    if (!visibilityBound) {
+      visibilityBound = true;
+      document.addEventListener('visibilitychange', onVisibility);
+    }
 
-    timer = setTimeout(tick, START_MS);
+    function onVisibility() {
+      if (document.hidden) {
+        clearTimeout(typeTimer);
+      } else if (seg < segments.length) {
+        clearTimeout(typeTimer);
+        typeTimer = setTimeout(tick, 300);
+      }
+    }
+
+    typeTimer = setTimeout(tick, START_MS);
   }
 
   /* ---------- Footer year ---------- */
@@ -273,6 +284,11 @@
     initTypewriter();
     initYear();
   }
+
+  // i18n.js rewrites the hero sentence; retype it in the new language.
+  document.addEventListener('i18n:change', function () {
+    initTypewriter();
+  });
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

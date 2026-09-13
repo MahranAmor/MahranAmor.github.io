@@ -45,18 +45,25 @@
         </div>
 
         <ul class="nav-menu">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-            <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
-            <li class="nav-item"><a href="#activities" class="nav-link">Activities</a></li>
-            <li class="nav-item"><a href="#recommendations" class="nav-link">Recommendation</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link" data-i18n="nav_1">Home</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link" data-i18n="nav_2">Projects</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link" data-i18n="nav_3">Experience</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link" data-i18n="nav_4">Skills</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link" data-i18n="nav_5">Education</a></li>
+            <li class="nav-item"><a href="#certifications" class="nav-link" data-i18n="nav_6">Certifications</a></li>
+            <li class="nav-item"><a href="#activities" class="nav-link" data-i18n="nav_7">Activities</a></li>
+            <li class="nav-item"><a href="#recommendations" class="nav-link" data-i18n="nav_8">Recommendation</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav_9">Contact</a></li>
         </ul>
 
         <div class="nav-actions">
+            <label class="sr-only" for="lang-select">Language</label>
+            <select class="lang-select" id="lang-select">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+                <option value="de">DE</option>
+            </select>
+
             <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
                 <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
@@ -83,16 +90,16 @@
     <div class="container">
         <div class="hero-badge">
             <span class="dot" aria-hidden="true"></span>
-            Open to internships &amp; graduate opportunities
+            <span data-i18n="badge_1">Open to internships &amp; graduate opportunities</span>
         </div>
 
         <h1 class="hero-name">Mahrane AMOR</h1>
 
         <p class="hero-title typewriter">
-            <span class="tw tw-lead">Data Science Engineering Student &amp; </span><span class="tw tw-role highlight">MLOps Enthusiast</span><span class="caret" aria-hidden="true"></span>
+            <span class="tw tw-lead" data-i18n="tw_1">Data Science Engineering Student &amp; </span><span class="tw tw-role highlight" data-i18n="tw_2">MLOps Enthusiast</span><span class="caret" aria-hidden="true"></span>
         </p>
 
-        <p class="hero-subtitle">
+        <p class="hero-subtitle" data-i18n="herosub_1">
             Final-year Data Science Engineering student at ENET&rsquo;Com, building production-grade
             AI systems &mdash; Agentic RAG architectures, deep learning models and real-time data
             pipelines. I care about the parts that make AI usable in practice: grounded answers,
@@ -104,7 +111,7 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                 </svg>
-                View my work
+                <span data-i18n="btn_1">View my work</span>
             </a>
 
             <!-- Drop your PDF at assets/Mahrane_AMOR_CV.pdf for this button to work. -->
@@ -113,7 +120,7 @@
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                     <path d="M7 10l5 5 5-5M12 15V3"></path>
                 </svg>
-                Download CV
+                <span data-i18n="btn_2">Download CV</span>
             </a>
 
             <a href="#contact" class="btn btn-ghost">
@@ -121,26 +128,26 @@
                     <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
                     <path d="M22 6l-10 7L2 6"></path>
                 </svg>
-                Get in touch
+                <span data-i18n="btn_3">Get in touch</span>
             </a>
         </div>
 
         <div class="hero-stats">
             <div class="stat">
                 <span class="stat-number" data-count="3">0</span>
-                <span class="stat-label">AI &amp; Data Internships</span>
+                <span class="stat-label" data-i18n="stat_1">AI &amp; Data Internships</span>
             </div>
             <div class="stat">
                 <span class="stat-number" data-count="6" data-suffix="+">0</span>
-                <span class="stat-label">Featured Projects</span>
+                <span class="stat-label" data-i18n="stat_2">Featured Projects</span>
             </div>
             <div class="stat">
                 <span class="stat-number" data-count="7" data-suffix="+">0</span>
-                <span class="stat-label">Certifications</span>
+                <span class="stat-label" data-i18n="stat_3">Certifications</span>
             </div>
             <div class="stat">
                 <span class="stat-number" data-count="3">0</span>
-                <span class="stat-label">Languages Spoken</span>
+                <span class="stat-label" data-i18n="stat_4">Languages Spoken</span>
             </div>
         </div>
     </div>
@@ -150,9 +157,9 @@
 <section id="projects" class="section section-alt">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-eyebrow">Selected work</span>
-            <h2 class="section-title">Projects</h2>
-            <p class="section-subtitle">
+            <span class="section-eyebrow" data-i18n="eyebrow_1">Selected work</span>
+            <h2 class="section-title" data-i18n="sectitle_1">Projects</h2>
+            <p class="section-subtitle" data-i18n="secsub_1">
                 End-to-end systems across agentic AI, medical imaging, predictive modelling and
                 real-time data engineering &mdash; each one built, evaluated and deployed.
             </p>
@@ -177,30 +184,30 @@
                 <div class="project-body">
                     <div class="project-meta">
                         <span class="badge">Featured</span>
-                        <span>Agentic AI &middot; Healthcare</span>
+                        <span data-i18n="pmeta_1">Agentic AI &middot; Healthcare</span>
                     </div>
 
-                    <h3 class="project-title">YouRi &mdash; Agentic RAG Medical Assistant</h3>
+                    <h3 class="project-title" data-i18n="ptitle_1">YouRi &mdash; Agentic RAG Medical Assistant</h3>
 
-                    <p class="project-desc">
+                    <p class="project-desc" data-i18n="pdesc_1">
                         An intelligent clinical question-answering assistant built on an Agentic RAG
                         architecture with LangGraph, where every LLM response is grounded on verifiable
                         sources to eliminate hallucinations.
                     </p>
 
                     <ul class="project-points">
-                        <li>
+                        <li data-i18n="li_1">
                             Engineered a <strong>query router with three execution scopes</strong>
                             (Internal / External / Hybrid) plus a triple-axis metadata filter, reaching
                             <strong>100&nbsp;% scope accuracy vs 37&nbsp;%</strong> for vanilla RAG on a
                             30-question clinical benchmark.
                         </li>
-                        <li>
+                        <li data-i18n="li_2">
                             Built a <strong>PII pseudonymization pipeline</strong> that redacts patient
                             identity (names &rarr; internal IDs, date of birth &rarr; age) before any
                             external LLM inference, ensuring GDPR-aligned data handling.
                         </li>
-                        <li>
+                        <li data-i18n="li_3">
                             Cut inference latency <strong>&times;15 (38.7&nbsp;s &rarr; 2.5&nbsp;s)</strong>
                             through INT8 quantization of the reranker while preserving relevance decisions
                             on the real corpus.
@@ -239,29 +246,29 @@
 
                 <div class="project-body">
                     <div class="project-meta">
-                        <span>Deep Learning &middot; Medical Imaging</span>
+                        <span data-i18n="pmeta_2">Deep Learning &middot; Medical Imaging</span>
                     </div>
 
-                    <h3 class="project-title">GlioScan &mdash; 3D Brain Tumor Segmentation</h3>
+                    <h3 class="project-title" data-i18n="ptitle_2">GlioScan &mdash; 3D Brain Tumor Segmentation</h3>
 
-                    <p class="project-desc">
+                    <p class="project-desc" data-i18n="pdesc_2">
                         A U-Net pipeline that segments brain tumors from multi-modal MRI on the
                         BraTS 2021 dataset, served through a FastAPI web interface.
                     </p>
 
                     <ul class="project-points">
-                        <li>
+                        <li data-i18n="li_4">
                             Trained 2D and 3D U-Nets on FLAIR / T1 / T1ce / T2 volumes from
                             <strong>600 BraTS 2021 patients</strong>, reaching a
                             <strong>mean Dice of 0.942</strong> (whole tumor 0.926, tumor core 0.953,
                             enhancing tumor 0.946).
                         </li>
-                        <li>
+                        <li data-i18n="li_5">
                             Full PyTorch pipeline &mdash; volume caching, a combined Dice + cross-entropy
                             loss, per-region metrics and test-time augmentation &mdash; trained in
                             <strong>~80 minutes on a single 6&nbsp;GB RTX 4050</strong>.
                         </li>
-                        <li>
+                        <li data-i18n="li_6">
                             Ships a FastAPI service with a <strong>/predict</strong> endpoint and an upload
                             UI: drop a patient&rsquo;s four NIfTI volumes and the tumor is overlaid on
                             axial slices in seconds.
@@ -284,7 +291,7 @@
                             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.4-4.04-1.4-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.62-2.8 5.64-5.48 5.94.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5z"></path>
                             </svg>
-                            View source
+                            <span data-i18n="srclink_1">View source</span>
                         </a>
                     </div>
                 </div>
@@ -305,20 +312,20 @@
 
                 <div class="project-body">
                     <div class="project-meta">
-                        <span>Data Engineering &middot; MLOps</span>
+                        <span data-i18n="pmeta_3">Data Engineering &middot; MLOps</span>
                     </div>
 
-                    <h3 class="project-title">Real-Time Anomaly Detection in 5G Networks</h3>
+                    <h3 class="project-title" data-i18n="ptitle_3">Real-Time Anomaly Detection in 5G Networks</h3>
 
-                    <p class="project-desc">
+                    <p class="project-desc" data-i18n="pdesc_3">
                         A streaming pipeline that monitors 5G network performance in real time and flags
                         failures and security threats as they happen.
                     </p>
 
                     <ul class="project-points">
-                        <li>Streaming ingestion with <strong>Apache Kafka</strong> feeding a real-time processing pipeline.</li>
-                        <li>ML and deep learning models trained to detect network failures and security anomalies.</li>
-                        <li>Predictions served through <strong>REST APIs</strong> and surfaced in Power BI dashboards for decision support.</li>
+                        <li data-i18n="li_7">Streaming ingestion with <strong>Apache Kafka</strong> feeding a real-time processing pipeline.</li>
+                        <li data-i18n="li_8">ML and deep learning models trained to detect network failures and security anomalies.</li>
+                        <li data-i18n="li_9">Predictions served through <strong>REST APIs</strong> and surfaced in Power BI dashboards for decision support.</li>
                     </ul>
 
                     <div class="tags">
@@ -338,7 +345,7 @@
                             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.4-4.04-1.4-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.62-2.8 5.64-5.48 5.94.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5z"></path>
                             </svg>
-                            View source
+                            <span data-i18n="srclink_2">View source</span>
                         </a>
                     </div>
                 </div>
@@ -358,20 +365,20 @@
 
                 <div class="project-body">
                     <div class="project-meta">
-                        <span>Computer Vision &middot; Medical Imaging</span>
+                        <span data-i18n="pmeta_4">Computer Vision &middot; Medical Imaging</span>
                     </div>
 
-                    <h3 class="project-title">Breast Cancer Detection with CNNs</h3>
+                    <h3 class="project-title" data-i18n="ptitle_4">Breast Cancer Detection with CNNs</h3>
 
-                    <p class="project-desc">
+                    <p class="project-desc" data-i18n="pdesc_4">
                         A convolutional neural network for breast-cancer detection on medical imaging
                         data, containerised and deployed for scalable inference.
                     </p>
 
                     <ul class="project-points">
-                        <li>Image preprocessing pipeline: resizing, normalization and <strong>data augmentation</strong>.</li>
-                        <li>Trained and evaluated in TensorFlow / PyTorch, tuned against validation metrics.</li>
-                        <li>Inference pipeline containerised with Docker and deployed on <strong>Azure ML / App Service</strong> behind a REST API.</li>
+                        <li data-i18n="li_10">Image preprocessing pipeline: resizing, normalization and <strong>data augmentation</strong>.</li>
+                        <li data-i18n="li_11">Trained and evaluated in TensorFlow / PyTorch, tuned against validation metrics.</li>
+                        <li data-i18n="li_12">Inference pipeline containerised with Docker and deployed on <strong>Azure ML / App Service</strong> behind a REST API.</li>
                     </ul>
 
                     <div class="tags">
@@ -402,20 +409,20 @@
 
                 <div class="project-body">
                     <div class="project-meta">
-                        <span>Machine Learning &middot; Deployment</span>
+                        <span data-i18n="pmeta_5">Machine Learning &middot; Deployment</span>
                     </div>
 
-                    <h3 class="project-title">Prediction of Road Accident Severity</h3>
+                    <h3 class="project-title" data-i18n="ptitle_5">Prediction of Road Accident Severity</h3>
 
-                    <p class="project-desc">
+                    <p class="project-desc" data-i18n="pdesc_5">
                         Predictive models that estimate accident severity from road-accident data,
                         shipped through a CI/CD pipeline to the cloud.
                     </p>
 
                     <ul class="project-points">
-                        <li>Data collection and preprocessing: missing values, categorical encoding, then <strong>EDA</strong> to isolate the drivers of severity.</li>
-                        <li>Built and fine-tuned <strong>Logistic Regression, Random Forest and XGBoost</strong> models.</li>
-                        <li>Evaluated on accuracy, F1-score and ROC-AUC; deployed via Docker + CI/CD on Azure.</li>
+                        <li data-i18n="li_13">Data collection and preprocessing: missing values, categorical encoding, then <strong>EDA</strong> to isolate the drivers of severity.</li>
+                        <li data-i18n="li_14">Built and fine-tuned <strong>Logistic Regression, Random Forest and XGBoost</strong> models.</li>
+                        <li data-i18n="li_15">Evaluated on accuracy, F1-score and ROC-AUC; deployed via Docker + CI/CD on Azure.</li>
                     </ul>
 
                     <div class="tags">
@@ -436,7 +443,7 @@
                             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.4-4.04-1.4-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.62-2.8 5.64-5.48 5.94.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5z"></path>
                             </svg>
-                            View source
+                            <span data-i18n="srclink_3">View source</span>
                         </a>
                     </div>
                 </div>
@@ -457,29 +464,29 @@
 
                 <div class="project-body">
                     <div class="project-meta">
-                        <span>Data Engineering &middot; Automation</span>
+                        <span data-i18n="pmeta_6">Data Engineering &middot; Automation</span>
                     </div>
 
-                    <h3 class="project-title">Tayara.tn Vehicle Scraper</h3>
+                    <h3 class="project-title" data-i18n="ptitle_6">Tayara.tn Vehicle Scraper</h3>
 
-                    <p class="project-desc">
+                    <p class="project-desc" data-i18n="pdesc_6">
                         A dual-implementation scraper that extracts and structures vehicle listings from
                         Tayara.tn &mdash; an automated n8n workflow for no-code scheduled runs, plus a
                         standalone Python script for pipeline integration.
                     </p>
 
                     <ul class="project-points">
-                        <li>
+                        <li data-i18n="li_16">
                             Multi-page scraping across <strong>30+ pages</strong> with automatic retry and
                             smart delays &mdash; roughly <strong>20 pages in 2&ndash;3 minutes</strong> at a
                             &gt;95&nbsp;% success rate.
                         </li>
-                        <li>
+                        <li data-i18n="li_17">
                             <strong>Mistral AI</strong> agent cleans and normalises the key fields (make,
                             model, year, price, fuel, transmission, location) into 100&nbsp;% valid
                             analysis-ready CSV.
                         </li>
-                        <li>
+                        <li data-i18n="li_18">
                             Two interchangeable paths: an n8n workflow using the Jina.ai API for
                             scheduled no-code runs, and a <strong>requests + BeautifulSoup</strong> script
                             for developers who need custom filters or export formats.
@@ -502,7 +509,7 @@
                             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.4-4.04-1.4-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.62-2.8 5.64-5.48 5.94.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5z"></path>
                             </svg>
-                            View source
+                            <span data-i18n="srclink_4">View source</span>
                         </a>
                     </div>
                 </div>
@@ -516,9 +523,9 @@
 <section id="experience" class="section">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-eyebrow">Where I have worked</span>
-            <h2 class="section-title">Experience</h2>
-            <p class="section-subtitle">
+            <span class="section-eyebrow" data-i18n="eyebrow_2">Where I have worked</span>
+            <h2 class="section-title" data-i18n="sectitle_2">Experience</h2>
+            <p class="section-subtitle" data-i18n="secsub_2">
                 Three internships across agentic AI, business intelligence and speech generation.
             </p>
         </div>
@@ -527,8 +534,8 @@
 
             <article class="timeline-item reveal">
                 <div class="timeline-head">
-                    <h3 class="timeline-role">AI Engineer Intern</h3>
-                    <span class="timeline-date">Jul 2026 &mdash; Aug 2026</span>
+                    <h3 class="timeline-role" data-i18n="role_1">AI Engineer Intern</h3>
+                    <span class="timeline-date" data-i18n="date_1">Jul 2026 &mdash; Aug 2026</span>
                 </div>
                 <div class="timeline-company">
                     YOUR OS
@@ -536,10 +543,10 @@
                     <span class="loc">Tunisia</span>
                 </div>
                 <ul class="project-points">
-                    <li>Designed and built <strong>YouRi</strong>, an intelligent medical assistant using an Agentic RAG architecture (LangGraph), grounding every LLM response on verifiable sources to eliminate hallucinations in clinical Q&amp;A.</li>
-                    <li>Engineered a query router with three execution scopes (Internal / External / Hybrid) and a triple-axis metadata filter, outperforming vanilla RAG by <strong>100&nbsp;% vs 37&nbsp;%</strong> on scope accuracy across a 30-question clinical benchmark.</li>
-                    <li>Implemented a <strong>PII pseudonymization pipeline</strong> that redacts patient identity before any external LLM inference, ensuring GDPR-aligned data handling.</li>
-                    <li>Optimized inference latency by <strong>&times;15</strong> (38.7&nbsp;s &rarr; 2.5&nbsp;s) through INT8 quantization of the reranker, while preserving relevance decisions on the real corpus.</li>
+                    <li data-i18n="li_19">Designed and built <strong>YouRi</strong>, an intelligent medical assistant using an Agentic RAG architecture (LangGraph), grounding every LLM response on verifiable sources to eliminate hallucinations in clinical Q&amp;A.</li>
+                    <li data-i18n="li_20">Engineered a query router with three execution scopes (Internal / External / Hybrid) and a triple-axis metadata filter, outperforming vanilla RAG by <strong>100&nbsp;% vs 37&nbsp;%</strong> on scope accuracy across a 30-question clinical benchmark.</li>
+                    <li data-i18n="li_21">Implemented a <strong>PII pseudonymization pipeline</strong> that redacts patient identity before any external LLM inference, ensuring GDPR-aligned data handling.</li>
+                    <li data-i18n="li_22">Optimized inference latency by <strong>&times;15</strong> (38.7&nbsp;s &rarr; 2.5&nbsp;s) through INT8 quantization of the reranker, while preserving relevance decisions on the real corpus.</li>
                 </ul>
                 <div class="tags">
                     <span class="tag has-logo"><img class="tag-logo" src="images/icons/python.svg" alt="" aria-hidden="true" loading="lazy" onerror="this.remove()">Python</span>
@@ -562,8 +569,8 @@
 
             <article class="timeline-item reveal">
                 <div class="timeline-head">
-                    <h3 class="timeline-role">Data Analyst Intern</h3>
-                    <span class="timeline-date">Aug 2025</span>
+                    <h3 class="timeline-role" data-i18n="role_2">Data Analyst Intern</h3>
+                    <span class="timeline-date" data-i18n="date_2">Aug 2025</span>
                 </div>
                 <div class="timeline-company">
                     Keyrus
@@ -571,11 +578,11 @@
                     <span class="loc">Tunis, Tunisia</span>
                 </div>
                 <ul class="project-points">
-                    <li>Designed and implemented decision-support dashboards for commercial performance monitoring in the retail sector.</li>
-                    <li>Built interactive dashboards for <strong>inventory management, sales revenue analysis and customer satisfaction tracking</strong>.</li>
-                    <li>Modeled and integrated data from multiple sources to ensure accurate and consistent <strong>KPIs</strong>.</li>
-                    <li>Developed advanced metrics and calculated measures using <strong>DAX</strong>.</li>
-                    <li>Deployed dashboards and data solutions on Microsoft Azure for secure, scalable access.</li>
+                    <li data-i18n="li_23">Designed and implemented decision-support dashboards for commercial performance monitoring in the retail sector.</li>
+                    <li data-i18n="li_24">Built interactive dashboards for <strong>inventory management, sales revenue analysis and customer satisfaction tracking</strong>.</li>
+                    <li data-i18n="li_25">Modeled and integrated data from multiple sources to ensure accurate and consistent <strong>KPIs</strong>.</li>
+                    <li data-i18n="li_26">Developed advanced metrics and calculated measures using <strong>DAX</strong>.</li>
+                    <li data-i18n="li_27">Deployed dashboards and data solutions on Microsoft Azure for secure, scalable access.</li>
                 </ul>
                 <div class="tags">
                     <span class="tag has-logo"><img class="tag-logo" src="images/icons/microsoftsqlserver.svg" alt="" aria-hidden="true" loading="lazy" onerror="this.remove()">SQL Server (SSMS)</span>
@@ -587,20 +594,20 @@
 
             <article class="timeline-item reveal">
                 <div class="timeline-head">
-                    <h3 class="timeline-role">AI Engineer Intern</h3>
-                    <span class="timeline-date">Jun 2025 &mdash; Jul 2025</span>
+                    <h3 class="timeline-role" data-i18n="role_3">AI Engineer Intern</h3>
+                    <span class="timeline-date" data-i18n="date_3">Jun 2025 &mdash; Jul 2025</span>
                 </div>
                 <div class="timeline-company">
                     Bhives.AI
                     <span class="sep">&middot;</span>
                     <span class="loc">Tunisia</span>
                 </div>
-                <p class="timeline-subtitle">Fine-Tuning F5-TTS for Arabic Neural Speech Generation</p>
+                <p class="timeline-subtitle" data-i18n="tsub_1">Fine-Tuning F5-TTS for Arabic Neural Speech Generation</p>
                 <ul class="project-points">
-                    <li>Implemented and fine-tuned the <strong>F5-TTS</strong> model for Arabic speech generation.</li>
-                    <li>Applied progressive training strategies to improve model stability and audio quality.</li>
-                    <li>Optimized inference performance for smoother, more natural speech output.</li>
-                    <li>Evaluated generated speech using technical metrics and perceptual listening tests.</li>
+                    <li data-i18n="li_28">Implemented and fine-tuned the <strong>F5-TTS</strong> model for Arabic speech generation.</li>
+                    <li data-i18n="li_29">Applied progressive training strategies to improve model stability and audio quality.</li>
+                    <li data-i18n="li_30">Optimized inference performance for smoother, more natural speech output.</li>
+                    <li data-i18n="li_31">Evaluated generated speech using technical metrics and perceptual listening tests.</li>
                 </ul>
                 <div class="tags">
                     <span class="tag has-logo"><img class="tag-logo" src="images/icons/python.svg" alt="" aria-hidden="true" loading="lazy" onerror="this.remove()">Python</span>
@@ -618,9 +625,9 @@
 <section id="skills" class="section section-alt">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-eyebrow">What I work with</span>
-            <h2 class="section-title">Skills &amp; Technologies</h2>
-            <p class="section-subtitle">
+            <span class="section-eyebrow" data-i18n="eyebrow_3">What I work with</span>
+            <h2 class="section-title" data-i18n="sectitle_3">Skills &amp; Technologies</h2>
+            <p class="section-subtitle" data-i18n="secsub_3">
                 From data pipelines and model training through to containerised deployment on the cloud.
             </p>
         </div>
@@ -634,7 +641,7 @@
                             <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"></path>
                         </svg>
                     </span>
-                    <h3>Programming</h3>
+                    <h3 data-i18n="skill_1">Programming</h3>
                 </div>
                 <div class="tags">
                     <span class="tag has-logo"><img class="tag-logo" src="images/icons/python.svg" alt="" aria-hidden="true" loading="lazy" onerror="this.remove()">Python</span>
@@ -663,7 +670,7 @@
                             <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
                         </svg>
                     </span>
-                    <h3>Data &amp; Big Data</h3>
+                    <h3 data-i18n="skill_2">Data &amp; Big Data</h3>
                 </div>
                 <div class="tags">
                     <span class="tag">SQL</span>
@@ -689,7 +696,7 @@
                             <path d="M6 6l3.5 4.5M6 18l3.5-4.5M15 12h3"></path>
                         </svg>
                     </span>
-                    <h3>Machine Learning &amp; AI</h3>
+                    <h3 data-i18n="skill_3">Machine Learning &amp; AI</h3>
                 </div>
                 <div class="tags">
                     <span class="tag has-logo"><img class="tag-logo" src="images/icons/tensorflow.svg" alt="" aria-hidden="true" loading="lazy" onerror="this.remove()">TensorFlow</span>
@@ -710,7 +717,7 @@
                             <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
                         </svg>
                     </span>
-                    <h3>Tools &amp; Platforms</h3>
+                    <h3 data-i18n="skill_4">Tools &amp; Platforms</h3>
                 </div>
                 <div class="tags">
                     <span class="tag has-logo"><img class="tag-logo" src="images/icons/linux.svg" alt="" aria-hidden="true" loading="lazy" onerror="this.remove()">Linux</span>
@@ -727,9 +734,9 @@
         </div>
 
         <div class="lang-row reveal">
-            <span class="lang-pill"><strong>Arabic</strong> <span>Native</span></span>
-            <span class="lang-pill"><strong>English</strong> <span>Professional</span></span>
-            <span class="lang-pill"><strong>French</strong> <span>Professional</span></span>
+            <span class="lang-pill"><strong data-i18n="langname_1">Arabic</strong> <span data-i18n="langlevel_1">Native</span></span>
+            <span class="lang-pill"><strong data-i18n="langname_2">English</strong> <span data-i18n="langlevel_2">Professional</span></span>
+            <span class="lang-pill"><strong data-i18n="langname_3">French</strong> <span data-i18n="langlevel_3">Professional</span></span>
         </div>
     </div>
 </section>
@@ -738,35 +745,35 @@
 <section id="education" class="section">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-eyebrow">Academic background</span>
-            <h2 class="section-title">Education</h2>
+            <span class="section-eyebrow" data-i18n="eyebrow_4">Academic background</span>
+            <h2 class="section-title" data-i18n="sectitle_4">Education</h2>
         </div>
 
         <div class="card-grid">
 
             <article class="info-card reveal">
-                <h3>National School of Electronics and Telecommunications of Sfax (ENET&rsquo;Com)</h3>
-                <p class="degree">Data Science Engineering Degree</p>
+                <h3 data-i18n="infoh_1">National School of Electronics and Telecommunications of Sfax (ENET&rsquo;Com)</h3>
+                <p class="degree" data-i18n="degree_1">Data Science Engineering Degree</p>
                 <div class="info-meta">
                     <span>Sep 2024 &mdash; present</span>
                     <span>&middot;</span>
                     <span>Tunisia</span>
                 </div>
-                <p>
+                <p data-i18n="infop_1">
                     Engineering programme covering machine learning, deep learning, big data
                     architectures, statistical modelling and cloud deployment.
                 </p>
             </article>
 
             <article class="info-card reveal">
-                <h3>Preparatory Institute for Engineering Studies of Kairouan (IPEIK)</h3>
-                <p class="degree">Preparatory Cycle &mdash; Technology and Physics Track</p>
+                <h3 data-i18n="infoh_2">Preparatory Institute for Engineering Studies of Kairouan (IPEIK)</h3>
+                <p class="degree" data-i18n="degree_2">Preparatory Cycle &mdash; Technology and Physics Track</p>
                 <div class="info-meta">
                     <span>Sep 2022 &mdash; May 2024</span>
                     <span>&middot;</span>
                     <span>Kairouan, Tunisia</span>
                 </div>
-                <p>
+                <p data-i18n="infop_2">
                     Two-year intensive preparation in mathematics, physics and engineering sciences
                     ahead of the national engineering entrance competition.
                 </p>
@@ -780,8 +787,8 @@
 <section id="certifications" class="section section-alt">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-eyebrow">Credentials</span>
-            <h2 class="section-title">Certifications</h2>
+            <span class="section-eyebrow" data-i18n="eyebrow_5">Credentials</span>
+            <h2 class="section-title" data-i18n="sectitle_5">Certifications</h2>
         </div>
 
         <div class="cert-grid">
@@ -882,34 +889,34 @@
 <section id="activities" class="section">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-eyebrow">Beyond the code</span>
-            <h2 class="section-title">Leadership &amp; Activities</h2>
+            <span class="section-eyebrow" data-i18n="eyebrow_6">Beyond the code</span>
+            <h2 class="section-title" data-i18n="sectitle_6">Leadership &amp; Activities</h2>
         </div>
 
         <div class="card-grid">
 
             <article class="info-card reveal">
-                <h3>MENA-ML Winter School of Machine Learning 2026</h3>
-                <p class="degree">Participant</p>
-                <p>
+                <h3 data-i18n="infoh_3">MENA-ML Winter School of Machine Learning 2026</h3>
+                <p class="degree" data-i18n="degree_3">Participant</p>
+                <p data-i18n="infop_3">
                     Expanded my network among AI researchers and industry experts, and deepened my
                     understanding of cutting-edge ML research trends.
                 </p>
             </article>
 
             <article class="info-card reveal">
-                <h3>Google Developer Student Club (GDSC), ENET&rsquo;Com</h3>
-                <p class="degree">Active Member</p>
-                <p>
+                <h3 data-i18n="infoh_4">Google Developer Student Club (GDSC), ENET&rsquo;Com</h3>
+                <p class="degree" data-i18n="degree_4">Active Member</p>
+                <p data-i18n="infop_4">
                     Took part in the MindShift Hackathon, contributing to AI/ML project development
                     and collaborative problem-solving.
                 </p>
             </article>
 
             <article class="info-card reveal">
-                <h3>Junior Chamber International (JCI)</h3>
-                <p class="degree">Member</p>
-                <p>
+                <h3 data-i18n="infoh_5">Junior Chamber International (JCI)</h3>
+                <p class="degree" data-i18n="degree_5">Member</p>
+                <p data-i18n="infop_5">
                     Participated in community projects and leadership initiatives, developing project
                     management, teamwork and communication skills through social-impact activities.
                 </p>
@@ -923,9 +930,9 @@
 <section id="recommendations" class="section section-alt">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-eyebrow">What my supervisor says</span>
-            <h2 class="section-title">Recommendation</h2>
-            <p class="section-subtitle">
+            <span class="section-eyebrow" data-i18n="eyebrow_7">What my supervisor says</span>
+            <h2 class="section-title" data-i18n="sectitle_7">Recommendation</h2>
+            <p class="section-subtitle" data-i18n="secsub_4">
                 From the professor who taught me across four courses and supervised my
                 end-of-year research project.
             </p>
@@ -934,19 +941,19 @@
         <article class="quote-card reveal">
             <div class="quote-header">
                 <h3 class="recommender-name">Prof. Bassem BEN HAMED</h3>
-                <p class="recommender-title">Professor of Applied Mathematics</p>
-                <p class="recommender-affiliation">Department of Mathematics and Decision-making Informatics</p>
-                <p class="recommender-affiliation">
+                <p class="recommender-title" data-i18n="rectitle_1">Professor of Applied Mathematics</p>
+                <p class="recommender-affiliation" data-i18n="recaff_1">Department of Mathematics and Decision-making Informatics</p>
+                <p class="recommender-affiliation" data-i18n="recaff_2">
                     National School of Electronics and Telecommunications of Sfax (ENET&rsquo;Com),
                     University of Sfax, Tunisia
                 </p>
-                <p class="recommendation-date">
+                <p class="recommendation-date" data-i18n="recdate_1">
                     September 3, 2026 &middot; Taught and supervised Mahrane directly
                 </p>
             </div>
 
             <div class="quote-body">
-                <blockquote>
+                <blockquote data-i18n="quote_1">
                     &ldquo;My assessment rests on an unusually broad basis. Mahrane has taken four of my
                     courses across the Data Science engineering curriculum:
                     <strong>Optimization and Differential Calculus</strong>,
@@ -962,7 +969,7 @@
             </div>
 
             <div class="quote-highlight">
-                <strong>Unambiguously the Strongest of His Cohort</strong>
+                <strong data-i18n="highlight_1">Unambiguously the Strongest of His Cohort</strong>
             </div>
         </article>
     </div>
@@ -972,9 +979,9 @@
 <section id="contact" class="section">
     <div class="container">
         <div class="contact-wrap reveal">
-            <span class="section-eyebrow">Get in touch</span>
-            <h2 class="section-title">Let&rsquo;s work together</h2>
-            <p class="section-subtitle">
+            <span class="section-eyebrow" data-i18n="eyebrow_8">Get in touch</span>
+            <h2 class="section-title" data-i18n="sectitle_8">Let&rsquo;s work together</h2>
+            <p class="section-subtitle" data-i18n="secsub_5">
                 I am open to internships, graduate roles and collaborations in AI, data science and
                 machine learning engineering. The quickest way to reach me is by email.
             </p>
@@ -1018,8 +1025,8 @@
 <!-- ======================= Footer ======================= -->
 <footer class="footer">
     <div class="container footer-inner">
-        <p style="margin:0">&copy; <span id="year">2026</span> Mahrane AMOR. All rights reserved.</p>
-        <p style="margin:0">Built with plain HTML, CSS &amp; JavaScript.</p>
+        <p style="margin:0" data-i18n="footer_1">&copy; <span id="year">2026</span> Mahrane AMOR. All rights reserved.</p>
+        <p style="margin:0" data-i18n="footer_2">Built with plain HTML, CSS &amp; JavaScript.</p>
     </div>
 </footer>
 
@@ -1029,6 +1036,7 @@
     </svg>
 </button>
 
+<script src="js/i18n.js" charset="utf-8"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

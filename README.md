@@ -86,6 +86,24 @@ A few marks are stored in a lightened tone (GitHub, Flask, Next.js, Kafka,
 LangChain, pandas, NumPy, OpenAI) because their true brand colour is near-black
 and would disappear against the dark theme.
 
+## Languages
+
+The page ships in English, French and German. English lives in `index.html` and
+is the source of truth; `js/i18n.js` holds the FR and DE dictionaries.
+
+Every translatable element carries a `data-i18n="key"` attribute. On load,
+`i18n.js` captures the English `innerHTML` of each one, then swaps in the chosen
+language. A key missing from a dictionary falls back to English, which is how
+proper nouns (people, institutions, certificate and technology names) stay put.
+
+- The selector sits in the navbar; the choice is saved to `localStorage`.
+- First-time visitors get their browser language if it is FR or DE, else English.
+- `i18n.js` loads **before** `script.js` so the hero typewriter types the
+  translated sentence; a later switch fires `i18n:change` and it retypes.
+
+To edit a translation, find the key in `js/i18n.js`. To add a new translatable
+element, give it `data-i18n="something_1"` and add that key to both dictionaries.
+
 ## Deploy to GitHub Pages
 
 1. Create a repo on GitHub (e.g. `portfolio`).
