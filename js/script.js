@@ -62,7 +62,7 @@
     });
 
     window.addEventListener('resize', function () {
-      if (window.innerWidth > 980) close();
+      if (window.innerWidth > 1080) close();
     });
   }
 

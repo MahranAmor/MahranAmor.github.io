@@ -799,6 +799,89 @@ ul { margin: 0; padding: 0; }
 .lang-pill strong { font-weight: 600; }
 .lang-pill span { font-size: .8rem; color: var(--text-subtle); }
 
+/* ---------- Recommendations ---------- */
+.quote-card {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 36px 32px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+
+.quote-card::before {
+  content: '\201C';
+  position: absolute;
+  top: 4px;
+  left: 26px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 5.5rem;
+  line-height: 1;
+  color: var(--accent);
+  opacity: .18;
+  pointer-events: none;
+}
+
+.quote-body { position: relative; }
+
+.quote-body blockquote {
+  margin: 0 0 20px;
+  padding-left: 18px;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  border-left: 2px solid var(--border);
+}
+.quote-body blockquote:last-of-type { margin-bottom: 28px; }
+.quote-body blockquote strong { font-weight: 600; color: var(--text); }
+
+.quote-body .quote-lead {
+  font-size: 1.12rem;
+  color: var(--text);
+  border-left-color: var(--accent);
+}
+
+.quote-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.quote-avatar {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  font-size: .88rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 50%;
+}
+
+.quote-author .name {
+  font-size: .98rem;
+  font-weight: 700;
+}
+.quote-author .role {
+  font-size: .86rem;
+  line-height: 1.45;
+  color: var(--text-subtle);
+}
+
+.quote-context {
+  margin: 18px 0 0;
+  font-size: .82rem;
+  font-style: italic;
+  color: var(--text-subtle);
+}
+
 /* ---------- Contact ---------- */
 .contact-wrap {
   max-width: 640px;
@@ -890,7 +973,7 @@ ul { margin: 0; padding: 0; }
 .reveal.visible { opacity: 1; transform: none; }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 980px) {
+@media (max-width: 1080px) {
   .nav-menu {
     position: fixed;
     top: var(--nav-h);
