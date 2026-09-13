@@ -43,25 +43,27 @@ change the title, description, bullet points and tags.
 - [x] Repo links for 5G Anomaly Detection, Road Accident Severity, GlioScan, Tayara Scraper
 - [ ] Repo link for Breast Cancer Detection (no matching repo on the profile yet)
 - [ ] Optional: live demo links for GlioScan's FastAPI UI
-- [ ] Optional: project cover screenshots in `images/` (see below)
+- [x] Project cover art in `images/` (generated SVGs - see below)
 
 ## Project cover images
 
-Each project card shows a screenshot if the matching file exists in `images/`,
-and falls back to the gradient + icon header if it does not. Drop in any of:
+Each project card shows the cover file below if it exists in `images/`, and
+falls back to the gradient + icon header if the file is missing. The shipped
+covers are hand-written SVGs, so they stay sharp at any size and cost a few KB
+each. Replace any of them with a real screenshot by dropping in a file of the
+same name:
 
 | File | Card |
 |---|---|
-| `images/youri.png` | YouRi - Agentic RAG Medical Assistant |
-| `images/glioscan.png` | GlioScan - 3D Brain Tumor Segmentation |
-| `images/5g-monitoring.png` | Real-Time Anomaly Detection in 5G Networks |
-| `images/breast-cancer.png` | Breast Cancer Detection with CNNs |
-| `images/road-accident.png` | Prediction of Road Accident Severity |
-| `images/tayara-scraper.png` | Tayara.tn Vehicle Scraper |
+| `images/youri.svg` | YouRi - Agentic RAG Medical Assistant |
+| `images/glioscan.svg` | GlioScan - 3D Brain Tumor Segmentation |
+| `images/5g-monitoring.svg` | Real-Time Anomaly Detection in 5G Networks |
+| `images/breast-cancer.svg` | Breast Cancer Detection with CNNs |
+| `images/road-accident.svg` | Prediction of Road Accident Severity |
+| `images/tayara-scraper.svg` | Tayara.tn Vehicle Scraper |
 
-Landscape images work best (roughly 3:2 or 16:9, at least 800px wide). `.jpg`
-also works - just change the extension in the `<img src>` for that card.
-- [ ] Optional: add project screenshots to `images/` and swap in `<img>` for the gradient headers
+Landscape images work best (roughly 2:1, at least 800px wide). `.png` and
+`.jpg` work too - just change the extension in that card's `<img src>`.
 
 ## Deploy to GitHub Pages
 

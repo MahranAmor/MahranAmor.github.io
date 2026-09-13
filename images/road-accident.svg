@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-label="Road receding to the horizon beside a severity classification chart">
+  <defs>
+    <linearGradient id="rBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062730"/>
+      <stop offset="1" stop-color="#07131d"/>
+    </linearGradient>
+    <linearGradient id="rRoad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity=".26"/>
+    </linearGradient>
+    <pattern id="rGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#22d3ee" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="360" fill="url(#rBg)"/>
+  <rect width="800" height="360" fill="url(#rGrid)"/>
+
+  <!-- horizon -->
+  <path d="M40 132h330" stroke="#22d3ee" stroke-opacity=".3" stroke-width="1.5" stroke-dasharray="6 8"/>
+
+  <!-- road -->
+  <g transform="translate(0 0)">
+    <path d="M188 132h44L330 330H60z" fill="url(#rRoad)" stroke="#22d3ee" stroke-opacity=".55" stroke-width="2.5"/>
+    <!-- centre dashes -->
+    <g fill="#5eead4">
+      <path d="M207 140h6l1 18h-8z" fill-opacity=".55"/>
+      <path d="M204 176h12l2 26h-16z" fill-opacity=".65"/>
+      <path d="M200 220h20l3 34h-26z" fill-opacity=".8"/>
+      <path d="M194 272h32l4 44h-40z" fill-opacity=".95"/>
+    </g>
+  </g>
+
+  <!-- impact marker -->
+  <g transform="translate(258 214)">
+    <circle r="15" fill="#07131d" stroke="#f87171" stroke-width="3"/>
+    <circle r="27" fill="none" stroke="#f87171" stroke-opacity=".35" stroke-width="2"/>
+    <circle r="39" fill="none" stroke="#f87171" stroke-opacity=".16" stroke-width="2"/>
+    <path d="M0-8v10M0 6v2.5" stroke="#f87171" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- severity classification panel -->
+  <g transform="translate(420 66)">
+    <rect width="332" height="228" rx="14" fill="#0a1f28" stroke="#22d3ee" stroke-opacity=".45" stroke-width="2"/>
+    <text x="24" y="38" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="13" fill="#8fdfea" letter-spacing="1.6">SEVERITY CLASS</text>
+
+    <!-- slight -->
+    <text x="24" y="76" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="12" fill="#8fdfea">SLIGHT</text>
+    <rect x="24" y="86" width="284" height="14" rx="7" fill="#22d3ee" fill-opacity=".12"/>
+    <rect x="24" y="86" width="196" height="14" rx="7" fill="#22d3ee" fill-opacity=".7"/>
+
+    <!-- serious -->
+    <text x="24" y="130" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="12" fill="#8fdfea">SERIOUS</text>
+    <rect x="24" y="140" width="284" height="14" rx="7" fill="#22d3ee" fill-opacity=".12"/>
+    <rect x="24" y="140" width="118" height="14" rx="7" fill="#5eead4" fill-opacity=".85"/>
+
+    <!-- fatal -->
+    <text x="24" y="184" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="12" fill="#8fdfea">FATAL</text>
+    <rect x="24" y="194" width="284" height="14" rx="7" fill="#22d3ee" fill-opacity=".12"/>
+    <rect x="24" y="194" width="54" height="14" rx="7" fill="#f87171" fill-opacity=".85"/>
+  </g>
+
+  <!-- roc badge -->
+  <g transform="translate(420 306)">
+    <rect width="332" height="34" rx="17" fill="#0a1f28" stroke="#5eead4" stroke-opacity=".5" stroke-width="1.6"/>
+    <path d="M20 24c8 0 10-14 18-14s10 8 18 8" fill="none" stroke="#5eead4" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="70" y="22" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="12" fill="#8fdfea" letter-spacing="1.2">LOGREG · RF · XGBOOST</text>
+  </g>
+</svg>

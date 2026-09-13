@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-label="Axial brain MRI slice with a segmented tumour region highlighted by contour rings">
+  <defs>
+    <linearGradient id="gBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062730"/>
+      <stop offset="1" stop-color="#07131d"/>
+    </linearGradient>
+    <radialGradient id="gTumor" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#5eead4" stop-opacity=".95"/>
+      <stop offset=".55" stop-color="#22d3ee" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="gGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#22d3ee" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="360" fill="url(#gBg)"/>
+  <rect width="800" height="360" fill="url(#gGrid)"/>
+
+  <!-- brain slice -->
+  <g transform="translate(400 180)">
+    <ellipse rx="150" ry="126" fill="#0a1f28" stroke="#22d3ee" stroke-opacity=".75" stroke-width="2.5"/>
+    <ellipse rx="128" ry="106" fill="none" stroke="#22d3ee" stroke-opacity=".28" stroke-width="1.5"/>
+    <path d="M0-126v252" stroke="#22d3ee" stroke-opacity=".3" stroke-width="1.5"/>
+
+    <!-- cortical folds -->
+    <g fill="none" stroke="#22d3ee" stroke-opacity=".35" stroke-width="2" stroke-linecap="round">
+      <path d="M-108-40c22 6 26 26 8 38s-14 34 8 42"/>
+      <path d="M-92 22c18-4 30 8 24 24"/>
+      <path d="M-70-78c16 10 14 28-2 34"/>
+      <path d="M92-44c-20 8-22 28-4 40s12 32-10 40"/>
+      <path d="M74 26c-16-6-30 6-24 22"/>
+      <path d="M56-80c-14 12-10 28 6 32"/>
+      <path d="M-30-104c10 14 4 26-10 30"/>
+      <path d="M34-104c-10 14-4 26 10 30"/>
+    </g>
+
+    <!-- segmented tumour -->
+    <g transform="translate(54 -14)">
+      <ellipse rx="46" ry="40" fill="url(#gTumor)"/>
+      <ellipse rx="30" ry="25" fill="none" stroke="#5eead4" stroke-width="2.5"/>
+      <ellipse rx="19" ry="15" fill="none" stroke="#a7f3e4" stroke-width="2"/>
+      <ellipse rx="9" ry="7" fill="#d7fff6" fill-opacity=".9"/>
+    </g>
+  </g>
+
+  <!-- crosshair on the lesion -->
+  <g stroke="#5eead4" stroke-width="1.6" stroke-opacity=".8">
+    <path d="M454 60v72M454 200v72M330 166h72M506 166h150"/>
+  </g>
+  <g fill="none" stroke="#5eead4" stroke-width="2.5" stroke-linecap="round">
+    <path d="M412 124h-18v-18M496 124h18v-18M412 208h-18v18M496 208h18v18"/>
+  </g>
+
+  <!-- modality strip -->
+  <g transform="translate(40 274)">
+    <g fill="none" stroke="#22d3ee" stroke-opacity=".5" stroke-width="1.8">
+      <rect x="0" y="0" width="46" height="46" rx="6"/>
+      <rect x="56" y="0" width="46" height="46" rx="6"/>
+      <rect x="112" y="0" width="46" height="46" rx="6"/>
+      <rect x="168" y="0" width="46" height="46" rx="6"/>
+    </g>
+    <g fill="#22d3ee" fill-opacity=".3">
+      <ellipse cx="23" cy="23" rx="13" ry="11"/>
+      <ellipse cx="79" cy="23" rx="13" ry="11"/>
+      <ellipse cx="135" cy="23" rx="13" ry="11"/>
+      <ellipse cx="191" cy="23" rx="13" ry="11"/>
+    </g>
+    <ellipse cx="191" cy="23" rx="5" ry="4" fill="#5eead4"/>
+  </g>
+
+  <!-- dice score -->
+  <g transform="translate(600 268)">
+    <rect width="160" height="58" rx="12" fill="#0a1f28" stroke="#5eead4" stroke-opacity=".6" stroke-width="2"/>
+    <text x="18" y="26" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="13" fill="#8fdfea" letter-spacing="1.5">MEAN DICE</text>
+    <text x="18" y="47" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="21" font-weight="700" fill="#5eead4">0.942</text>
+  </g>
+</svg>

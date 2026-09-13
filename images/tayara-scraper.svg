@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-label="Raw vehicle listings flowing through a cleaning step into a structured CSV table">
+  <defs>
+    <linearGradient id="tBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062730"/>
+      <stop offset="1" stop-color="#07131d"/>
+    </linearGradient>
+    <linearGradient id="tFlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#5eead4" stop-opacity=".9"/>
+    </linearGradient>
+    <pattern id="tGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#22d3ee" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="360" fill="url(#tBg)"/>
+  <rect width="800" height="360" fill="url(#tGrid)"/>
+
+  <!-- raw listing cards, messy -->
+  <g>
+    <g transform="translate(44 52) rotate(-4)">
+      <rect width="150" height="72" rx="10" fill="#0a1f28" stroke="#22d3ee" stroke-opacity=".4" stroke-width="2"/>
+      <rect x="14" y="16" width="60" height="34" rx="5" fill="#22d3ee" fill-opacity=".16"/>
+      <path d="M22 44h44M28 44l3-10h20l3 10" fill="none" stroke="#22d3ee" stroke-opacity=".6" stroke-width="2" stroke-linejoin="round"/>
+      <rect x="86" y="20" width="50" height="7" rx="3.5" fill="#67e8f9" fill-opacity=".55"/>
+      <rect x="86" y="34" width="36" height="6" rx="3" fill="#67e8f9" fill-opacity=".3"/>
+      <rect x="86" y="46" width="44" height="6" rx="3" fill="#67e8f9" fill-opacity=".22"/>
+    </g>
+
+    <g transform="translate(58 142) rotate(3)">
+      <rect width="150" height="72" rx="10" fill="#0a1f28" stroke="#22d3ee" stroke-opacity=".4" stroke-width="2"/>
+      <rect x="14" y="16" width="60" height="34" rx="5" fill="#22d3ee" fill-opacity=".16"/>
+      <path d="M22 44h44M28 44l3-10h20l3 10" fill="none" stroke="#22d3ee" stroke-opacity=".6" stroke-width="2" stroke-linejoin="round"/>
+      <rect x="86" y="20" width="44" height="7" rx="3.5" fill="#67e8f9" fill-opacity=".55"/>
+      <rect x="86" y="34" width="50" height="6" rx="3" fill="#67e8f9" fill-opacity=".3"/>
+      <rect x="86" y="46" width="30" height="6" rx="3" fill="#67e8f9" fill-opacity=".22"/>
+    </g>
+
+    <g transform="translate(44 232) rotate(-2)">
+      <rect width="150" height="72" rx="10" fill="#0a1f28" stroke="#22d3ee" stroke-opacity=".4" stroke-width="2"/>
+      <rect x="14" y="16" width="60" height="34" rx="5" fill="#22d3ee" fill-opacity=".16"/>
+      <path d="M22 44h44M28 44l3-10h20l3 10" fill="none" stroke="#22d3ee" stroke-opacity=".6" stroke-width="2" stroke-linejoin="round"/>
+      <rect x="86" y="20" width="54" height="7" rx="3.5" fill="#67e8f9" fill-opacity=".55"/>
+      <rect x="86" y="34" width="30" height="6" rx="3" fill="#67e8f9" fill-opacity=".3"/>
+      <rect x="86" y="46" width="40" height="6" rx="3" fill="#67e8f9" fill-opacity=".22"/>
+    </g>
+  </g>
+
+  <!-- flow into the cleaning node -->
+  <g fill="none" stroke="url(#tFlow)" stroke-width="2.5" stroke-linecap="round">
+    <path d="M208 88h40c14 0 22 10 22 24v44"/>
+    <path d="M216 178h54"/>
+    <path d="M204 268h44c14 0 22-10 22-24v-44"/>
+  </g>
+
+  <!-- cleaning node -->
+  <g transform="translate(272 140)">
+    <rect width="86" height="76" rx="16" fill="#0b2630" stroke="#5eead4" stroke-width="2.5"/>
+    <path d="M26 26l8 8 8-8M43 20v26" fill="none" stroke="#5eead4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M22 54h42" stroke="#5eead4" stroke-opacity=".6" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="43" cy="20" r="0"/>
+  </g>
+  <text x="315" y="240" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="12" fill="#8fdfea" letter-spacing="1.2">MISTRAL AI</text>
+
+  <path d="M372 178h44" fill="none" stroke="#5eead4" stroke-opacity=".8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M408 170l10 8-10 8" fill="none" stroke="#5eead4" stroke-opacity=".8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- structured table -->
+  <g transform="translate(434 62)">
+    <rect width="318" height="236" rx="14" fill="#0a1f28" stroke="#22d3ee" stroke-opacity=".55" stroke-width="2"/>
+    <rect x="0" y="0" width="318" height="40" rx="14" fill="#22d3ee" fill-opacity=".14"/>
+    <path d="M0 40h318" stroke="#22d3ee" stroke-opacity=".4" stroke-width="2"/>
+    <g stroke="#22d3ee" stroke-opacity=".18" stroke-width="1.2">
+      <path d="M96 0v236M178 0v236M250 0v236"/>
+      <path d="M0 80h318M0 120h318M0 160h318M0 200h318"/>
+    </g>
+    <g font-family="'JetBrains Mono',ui-monospace,monospace" font-size="11" fill="#8fdfea" letter-spacing=".8">
+      <text x="16" y="25">BRAND</text>
+      <text x="110" y="25">YEAR</text>
+      <text x="192" y="25">PRICE</text>
+      <text x="262" y="25">CITY</text>
+    </g>
+    <g fill="#5eead4">
+      <rect x="16" y="54" width="58" height="8" rx="4" fill-opacity=".75"/>
+      <rect x="110" y="54" width="38" height="8" rx="4" fill-opacity=".55"/>
+      <rect x="192" y="54" width="44" height="8" rx="4" fill-opacity=".7"/>
+      <rect x="262" y="54" width="40" height="8" rx="4" fill-opacity=".5"/>
+
+      <rect x="16" y="94" width="48" height="8" rx="4" fill-opacity=".7"/>
+      <rect x="110" y="94" width="38" height="8" rx="4" fill-opacity=".5"/>
+      <rect x="192" y="94" width="38" height="8" rx="4" fill-opacity=".65"/>
+      <rect x="262" y="94" width="34" height="8" rx="4" fill-opacity=".45"/>
+
+      <rect x="16" y="134" width="64" height="8" rx="4" fill-opacity=".7"/>
+      <rect x="110" y="134" width="38" height="8" rx="4" fill-opacity=".5"/>
+      <rect x="192" y="134" width="48" height="8" rx="4" fill-opacity=".65"/>
+      <rect x="262" y="134" width="44" height="8" rx="4" fill-opacity=".45"/>
+
+      <rect x="16" y="174" width="52" height="8" rx="4" fill-opacity=".6"/>
+      <rect x="110" y="174" width="38" height="8" rx="4" fill-opacity=".42"/>
+      <rect x="192" y="174" width="40" height="8" rx="4" fill-opacity=".55"/>
+      <rect x="262" y="174" width="38" height="8" rx="4" fill-opacity=".38"/>
+
+      <rect x="16" y="214" width="44" height="8" rx="4" fill-opacity=".45"/>
+      <rect x="110" y="214" width="38" height="8" rx="4" fill-opacity=".3"/>
+      <rect x="192" y="214" width="36" height="8" rx="4" fill-opacity=".4"/>
+      <rect x="262" y="214" width="32" height="8" rx="4" fill-opacity=".28"/>
+    </g>
+  </g>
+</svg>
