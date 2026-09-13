@@ -619,6 +619,22 @@ ul { margin: 0; padding: 0; }
   border-radius: var(--radius-sm);
 }
 
+/* Tags carrying a real brand mark. Icons are vendored SVGs, so a missing file
+   just drops the image (inline onerror) and leaves the plain text pill. */
+.tag.has-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 8px;
+}
+
+.tag-logo {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;

@@ -65,6 +65,27 @@ same name:
 Landscape images work best (roughly 2:1, at least 800px wide). `.png` and
 `.jpg` work too - just change the extension in that card's `<img src>`.
 
+## Technology logos
+
+Tag pills carry real brand marks, vendored as SVGs in `images/icons/` (~147 KB
+for 38 logos) rather than hot-linked, so the site has no third-party runtime
+dependency. Sources: [Simple Icons](https://simpleicons.org) (CC0) and
+[Devicon](https://devicon.dev) (MIT) for marks Simple Icons has retired.
+
+The label -> slug mapping lives in the `has-logo` tag markup in `index.html`.
+Tags without a real logo (RAG, MLOps, CNN, ETL, Deep Learning ...) stay as plain
+text pills by design. To add a logo to one, drop `images/icons/<slug>.svg` in and
+change that tag to:
+
+```html
+<span class="tag has-logo"><img class="tag-logo" src="images/icons/<slug>.svg"
+      alt="" aria-hidden="true" loading="lazy" onerror="this.remove()">Label</span>
+```
+
+A few marks are stored in a lightened tone (GitHub, Flask, Next.js, Kafka,
+LangChain, pandas, NumPy, OpenAI) because their true brand colour is near-black
+and would disappear against the dark theme.
+
 ## Deploy to GitHub Pages
 
 1. Create a repo on GitHub (e.g. `portfolio`).
