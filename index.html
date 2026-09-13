@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mahrane AMOR - Data Science &amp; AI Engineering</title>
+    <meta name="description" content="Data Science Engineering student specialising in Agentic AI, RAG systems, machine learning and MLOps. Portfolio of projects, internships and certifications.">
+    <meta name="author" content="Mahrane AMOR">
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mahrane AMOR - Data Science &amp; AI Engineering">
+    <meta property="og:description" content="Data Science Engineering student specialising in Agentic AI, RAG systems, machine learning and MLOps.">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#129302;</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Apply the saved theme before first paint to avoid a flash of the wrong colours. -->
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
+</head>
+<body>
+
+<!-- ======================= Navigation ======================= -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="#home">Mahrane <span>AMOR</span></a>
+        </div>
+
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li class="nav-item"><a href="#activities" class="nav-link">Activities</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                </svg>
+            </button>
+
+            <button class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+<!-- ======================= Hero ======================= -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Open to internships &amp; graduate opportunities
+        </div>
+
+        <h1 class="hero-name">Mahrane AMOR</h1>
+
+        <p class="hero-title">
+            Data Science Engineering Student &amp; <span class="highlight">AI Engineer</span>
+        </p>
+
+        <p class="hero-subtitle">
+            Third-year Data Science Engineering student at ENET&rsquo;Com, building production-grade
+            AI systems &mdash; Agentic RAG architectures, deep learning models and real-time data
+            pipelines. I care about the parts that make AI usable in practice: grounded answers,
+            privacy-safe pipelines and inference fast enough to ship.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                View my work
+            </a>
+
+            <!-- Drop your PDF at assets/Mahrane_AMOR_CV.pdf for this button to work. -->
+            <a href="assets/Mahrane_AMOR_CV.pdf" class="btn btn-ghost" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <path d="M7 10l5 5 5-5M12 15V3"></path>
+                </svg>
+                Download CV
+            </a>
+
+            <a href="#contact" class="btn btn-ghost">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
+                    <path d="M22 6l-10 7L2 6"></path>
+                </svg>
+                Get in touch
+            </a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number" data-count="3">0</span>
+                <span class="stat-label">AI &amp; Data Internships</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-count="4" data-suffix="+">0</span>
+                <span class="stat-label">Featured Projects</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-count="7" data-suffix="+">0</span>
+                <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-count="3">0</span>
+                <span class="stat-label">Languages Spoken</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======================= Projects ======================= -->
+<section id="projects" class="section section-alt">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-eyebrow">Selected work</span>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">
+                End-to-end systems across agentic AI, computer vision, predictive modelling and
+                real-time data engineering &mdash; each one built, evaluated and deployed.
+            </p>
+        </div>
+
+        <div class="project-grid">
+
+            <!-- ---------- Featured: YouRi ---------- -->
+            <article class="project-card featured reveal">
+                <div class="project-visual">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="8" width="18" height="12" rx="2"></rect>
+                        <path d="M12 8V4M9 4h6"></path>
+                        <circle cx="8.5" cy="13.5" r="1.2"></circle>
+                        <circle cx="15.5" cy="13.5" r="1.2"></circle>
+                        <path d="M9 17h6"></path>
+                    </svg>
+                </div>
+
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="badge">Featured</span>
+                        <span>Agentic AI &middot; Healthcare</span>
+                    </div>
+
+                    <h3 class="project-title">YouRi &mdash; Agentic RAG Medical Assistant</h3>
+
+                    <p class="project-desc">
+                        An intelligent clinical question-answering assistant built on an Agentic RAG
+                        architecture with LangGraph, where every LLM response is grounded on verifiable
+                        sources to eliminate hallucinations.
+                    </p>
+
+                    <ul class="project-points">
+                        <li>
+                            Engineered a <strong>query router with three execution scopes</strong>
+                            (Internal / External / Hybrid) plus a triple-axis metadata filter, reaching
+                            <strong>100&nbsp;% scope accuracy vs 37&nbsp;%</strong> for vanilla RAG on a
+                            30-question clinical benchmark.
+                        </li>
+                        <li>
+                            Built a <strong>PII pseudonymization pipeline</strong> that redacts patient
+                            identity (names &rarr; internal IDs, date of birth &rarr; age) before any
+                            external LLM inference, ensuring GDPR-aligned data handling.
+                        </li>
+                        <li>
+                            Cut inference latency <strong>&times;15 (38.7&nbsp;s &rarr; 2.5&nbsp;s)</strong>
+                            through INT8 quantization of the reranker while preserving relevance decisions
+                            on the real corpus.
+                        </li>
+                    </ul>
+
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">LangGraph</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">OpenAI</span>
+                        <span class="tag">Mistral AI</span>
+                        <span class="tag">Hugging Face</span>
+                        <span class="tag">Qdrant</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">MinIO</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">TypeScript</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ---------- 5G anomaly detection ---------- -->
+            <article class="project-card reveal">
+                <div class="project-visual">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                        <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                        <circle cx="12" cy="20" r="1"></circle>
+                    </svg>
+                </div>
+
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span>Data Engineering &middot; MLOps</span>
+                    </div>
+
+                    <h3 class="project-title">Real-Time Anomaly Detection in 5G Networks</h3>
+
+                    <p class="project-desc">
+                        A streaming pipeline that monitors 5G network performance in real time and flags
+                        failures and security threats as they happen.
+                    </p>
+
+                    <ul class="project-points">
+                        <li>Streaming ingestion with <strong>Apache Kafka</strong> feeding a real-time processing pipeline.</li>
+                        <li>ML and deep learning models trained to detect network failures and security anomalies.</li>
+                        <li>Predictions served through <strong>REST APIs</strong> and surfaced in Power BI dashboards for decision support.</li>
+                    </ul>
+
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Apache Kafka</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Azure SQL</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ---------- Breast cancer detection ---------- -->
+            <article class="project-card reveal">
+                <div class="project-visual">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <path d="M3 9h18M9 3v18"></path>
+                        <circle cx="15.5" cy="15" r="2.5"></circle>
+                    </svg>
+                </div>
+
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span>Computer Vision &middot; Medical Imaging</span>
+                    </div>
+
+                    <h3 class="project-title">Breast Cancer Detection with CNNs</h3>
+
+                    <p class="project-desc">
+                        A convolutional neural network for breast-cancer detection on medical imaging
+                        data, containerised and deployed for scalable inference.
+                    </p>
+
+                    <ul class="project-points">
+                        <li>Image preprocessing pipeline: resizing, normalization and <strong>data augmentation</strong>.</li>
+                        <li>Trained and evaluated in TensorFlow / PyTorch, tuned against validation metrics.</li>
+                        <li>Inference pipeline containerised with Docker and deployed on <strong>Azure ML / App Service</strong> behind a REST API.</li>
+                    </ul>
+
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">CNN</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Azure ML</span>
+                        <span class="tag">REST API</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ---------- Road accident severity ---------- -->
+            <article class="project-card reveal">
+                <div class="project-visual">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 21h18"></path>
+                        <path d="M6 21V9l6-5 6 5v12"></path>
+                        <path d="M12 4v17"></path>
+                        <path d="M9 12h.01M15 12h.01M9 16h.01M15 16h.01"></path>
+                    </svg>
+                </div>
+
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span>Machine Learning &middot; Deployment</span>
+                    </div>
+
+                    <h3 class="project-title">Prediction of Road Accident Severity</h3>
+
+                    <p class="project-desc">
+                        Predictive models that estimate accident severity from road-accident data,
+                        shipped through a CI/CD pipeline to the cloud.
+                    </p>
+
+                    <ul class="project-points">
+                        <li>Data collection and preprocessing: missing values, categorical encoding, then <strong>EDA</strong> to isolate the drivers of severity.</li>
+                        <li>Built and fine-tuned <strong>Logistic Regression, Random Forest and XGBoost</strong> models.</li>
+                        <li>Evaluated on accuracy, F1-score and ROC-AUC; deployed via Docker + CI/CD on Azure.</li>
+                    </ul>
+
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">XGBoost</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Seaborn</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Azure</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ======================= Experience ======================= -->
+<section id="experience" class="section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-eyebrow">Where I have worked</span>
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">
+                Three internships across agentic AI, business intelligence and speech generation.
+            </p>
+        </div>
+
+        <div class="timeline">
+
+            <article class="timeline-item reveal">
+                <div class="timeline-head">
+                    <h3 class="timeline-role">AI Engineer Intern</h3>
+                    <span class="timeline-date">Jul 2026 &mdash; Aug 2026</span>
+                </div>
+                <div class="timeline-company">
+                    YOUR OS
+                    <span class="sep">&middot;</span>
+                    <span class="loc">Tunisia</span>
+                </div>
+                <ul class="project-points">
+                    <li>Designed and built <strong>YouRi</strong>, an intelligent medical assistant using an Agentic RAG architecture (LangGraph), grounding every LLM response on verifiable sources to eliminate hallucinations in clinical Q&amp;A.</li>
+                    <li>Engineered a query router with three execution scopes (Internal / External / Hybrid) and a triple-axis metadata filter, outperforming vanilla RAG by <strong>100&nbsp;% vs 37&nbsp;%</strong> on scope accuracy across a 30-question clinical benchmark.</li>
+                    <li>Implemented a <strong>PII pseudonymization pipeline</strong> that redacts patient identity before any external LLM inference, ensuring GDPR-aligned data handling.</li>
+                    <li>Optimized inference latency by <strong>&times;15</strong> (38.7&nbsp;s &rarr; 2.5&nbsp;s) through INT8 quantization of the reranker, while preserving relevance decisions on the real corpus.</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">LangGraph</span>
+                    <span class="tag">OpenAI</span>
+                    <span class="tag">Mistral AI</span>
+                    <span class="tag">Hugging Face</span>
+                    <span class="tag">Sentence Transformers</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Qdrant</span>
+                    <span class="tag">MinIO</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">GitHub Actions</span>
+                    <span class="tag">Next.js</span>
+                    <span class="tag">TypeScript</span>
+                </div>
+            </article>
+
+            <article class="timeline-item reveal">
+                <div class="timeline-head">
+                    <h3 class="timeline-role">Data Analyst Intern</h3>
+                    <span class="timeline-date">Aug 2025</span>
+                </div>
+                <div class="timeline-company">
+                    Keyrus
+                    <span class="sep">&middot;</span>
+                    <span class="loc">Tunis, Tunisia</span>
+                </div>
+                <ul class="project-points">
+                    <li>Designed and implemented decision-support dashboards for commercial performance monitoring in the retail sector.</li>
+                    <li>Built interactive dashboards for <strong>inventory management, sales revenue analysis and customer satisfaction tracking</strong>.</li>
+                    <li>Modeled and integrated data from multiple sources to ensure accurate and consistent <strong>KPIs</strong>.</li>
+                    <li>Developed advanced metrics and calculated measures using <strong>DAX</strong>.</li>
+                    <li>Deployed dashboards and data solutions on Microsoft Azure for secure, scalable access.</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">SQL Server (SSMS)</span>
+                    <span class="tag">Power BI</span>
+                    <span class="tag">DAX</span>
+                    <span class="tag">Microsoft Azure</span>
+                </div>
+            </article>
+
+            <article class="timeline-item reveal">
+                <div class="timeline-head">
+                    <h3 class="timeline-role">AI Engineer Intern</h3>
+                    <span class="timeline-date">Jun 2025 &mdash; Jul 2025</span>
+                </div>
+                <div class="timeline-company">
+                    Bhives.AI
+                    <span class="sep">&middot;</span>
+                    <span class="loc">Tunisia</span>
+                </div>
+                <p class="timeline-subtitle">Fine-Tuning F5-TTS for Arabic Neural Speech Generation</p>
+                <ul class="project-points">
+                    <li>Implemented and fine-tuned the <strong>F5-TTS</strong> model for Arabic speech generation.</li>
+                    <li>Applied progressive training strategies to improve model stability and audio quality.</li>
+                    <li>Optimized inference performance for smoother, more natural speech output.</li>
+                    <li>Evaluated generated speech using technical metrics and perceptual listening tests.</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">Audio Processing</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ======================= Skills ======================= -->
+<section id="skills" class="section section-alt">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-eyebrow">What I work with</span>
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <p class="section-subtitle">
+                From data pipelines and model training through to containerised deployment on the cloud.
+            </p>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card reveal">
+                <div class="skill-head">
+                    <span class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"></path>
+                        </svg>
+                    </span>
+                    <h3>Programming</h3>
+                </div>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">Seaborn</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">LangGraph</span>
+                    <span class="tag">R</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">PL/SQL</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-head">
+                    <span class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </span>
+                    <h3>Data &amp; Big Data</h3>
+                </div>
+                <div class="tags">
+                    <span class="tag">SQL</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Oracle</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Scala</span>
+                    <span class="tag">Apache Kafka</span>
+                    <span class="tag">Power BI</span>
+                    <span class="tag">DAX</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-head">
+                    <span class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <circle cx="4" cy="6" r="2"></circle>
+                            <circle cx="4" cy="18" r="2"></circle>
+                            <circle cx="20" cy="12" r="2"></circle>
+                            <path d="M6 6l3.5 4.5M6 18l3.5-4.5M15 12h3"></path>
+                        </svg>
+                    </span>
+                    <h3>Machine Learning &amp; AI</h3>
+                </div>
+                <div class="tags">
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Fine-tuning</span>
+                    <span class="tag">RAG</span>
+                    <span class="tag">Agentic AI</span>
+                    <span class="tag">MLOps</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">Deep Learning</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-head">
+                    <span class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                        </svg>
+                    </span>
+                    <h3>Tools &amp; Platforms</h3>
+                </div>
+                <div class="tags">
+                    <span class="tag">Linux</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">GitHub Actions</span>
+                    <span class="tag">CI/CD</span>
+                    <span class="tag">Microsoft Azure</span>
+                    <span class="tag">Azure ML</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="lang-row reveal">
+            <span class="lang-pill"><strong>Arabic</strong> <span>Native</span></span>
+            <span class="lang-pill"><strong>English</strong> <span>Professional</span></span>
+            <span class="lang-pill"><strong>French</strong> <span>Professional</span></span>
+        </div>
+    </div>
+</section>
+
+<!-- ======================= Education ======================= -->
+<section id="education" class="section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-eyebrow">Academic background</span>
+            <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="card-grid">
+
+            <article class="info-card reveal">
+                <h3>National School of Electronics and Telecommunications of Sfax (ENET&rsquo;Com)</h3>
+                <p class="degree">Data Science Engineering Degree</p>
+                <div class="info-meta">
+                    <span>Sep 2024 &mdash; present</span>
+                    <span>&middot;</span>
+                    <span>Tunisia</span>
+                </div>
+                <p>
+                    Engineering programme covering machine learning, deep learning, big data
+                    architectures, statistical modelling and cloud deployment.
+                </p>
+            </article>
+
+            <article class="info-card reveal">
+                <h3>Preparatory Institute for Engineering Studies of Kairouan (IPEIK)</h3>
+                <p class="degree">Preparatory Cycle &mdash; Technology and Physics Track</p>
+                <div class="info-meta">
+                    <span>Sep 2022 &mdash; May 2024</span>
+                    <span>&middot;</span>
+                    <span>Kairouan, Tunisia</span>
+                </div>
+                <p>
+                    Two-year intensive preparation in mathematics, physics and engineering sciences
+                    ahead of the national engineering entrance competition.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ======================= Certifications ======================= -->
+<section id="certifications" class="section section-alt">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-eyebrow">Credentials</span>
+            <h2 class="section-title">Certifications</h2>
+        </div>
+
+        <div class="cert-grid">
+
+            <div class="cert-item reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="6"></circle>
+                    <path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"></path>
+                </svg>
+                <div>
+                    <span class="cert-issuer">Microsoft</span>
+                    <span class="cert-name">Azure Fundamentals (AZ-900)</span>
+                </div>
+            </div>
+
+            <div class="cert-item reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="6"></circle>
+                    <path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"></path>
+                </svg>
+                <div>
+                    <span class="cert-issuer">Microsoft</span>
+                    <span class="cert-name">Azure AI Fundamentals (AI-900)</span>
+                </div>
+            </div>
+
+            <div class="cert-item reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="6"></circle>
+                    <path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"></path>
+                </svg>
+                <div>
+                    <span class="cert-issuer">Cognitive Class</span>
+                    <span class="cert-name">Python for Data Science</span>
+                </div>
+            </div>
+
+            <div class="cert-item reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="6"></circle>
+                    <path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"></path>
+                </svg>
+                <div>
+                    <span class="cert-issuer">365 Data Science</span>
+                    <span class="cert-name">Probability</span>
+                </div>
+            </div>
+
+            <div class="cert-item reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="6"></circle>
+                    <path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"></path>
+                </svg>
+                <div>
+                    <span class="cert-issuer">HackerRank</span>
+                    <span class="cert-name">Problem Solving</span>
+                </div>
+            </div>
+
+            <div class="cert-item reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="6"></circle>
+                    <path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"></path>
+                </svg>
+                <div>
+                    <span class="cert-issuer">Sololearn</span>
+                    <span class="cert-name">SQL Intermediate</span>
+                </div>
+            </div>
+
+            <div class="cert-item reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="6"></circle>
+                    <path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"></path>
+                </svg>
+                <div>
+                    <span class="cert-issuer">Udemy</span>
+                    <span class="cert-name">Machine Learning A-Z</span>
+                </div>
+            </div>
+
+            <div class="cert-item reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="6"></circle>
+                    <path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"></path>
+                </svg>
+                <div>
+                    <span class="cert-issuer">DataCamp</span>
+                    <span class="cert-name">AI Fundamentals</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ======================= Activities ======================= -->
+<section id="activities" class="section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-eyebrow">Beyond the code</span>
+            <h2 class="section-title">Leadership &amp; Activities</h2>
+        </div>
+
+        <div class="card-grid">
+
+            <article class="info-card reveal">
+                <h3>MENA-ML Winter School of Machine Learning 2026</h3>
+                <p class="degree">Participant</p>
+                <p>
+                    Expanded my network among AI researchers and industry experts, and deepened my
+                    understanding of cutting-edge ML research trends.
+                </p>
+            </article>
+
+            <article class="info-card reveal">
+                <h3>Google Developer Student Club (GDSC), ENET&rsquo;Com</h3>
+                <p class="degree">Active Member</p>
+                <p>
+                    Took part in the MindShift Hackathon, contributing to AI/ML project development
+                    and collaborative problem-solving.
+                </p>
+            </article>
+
+            <article class="info-card reveal">
+                <h3>Junior Chamber International (JCI)</h3>
+                <p class="degree">Member</p>
+                <p>
+                    Participated in community projects and leadership initiatives, developing project
+                    management, teamwork and communication skills through social-impact activities.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ======================= Contact ======================= -->
+<section id="contact" class="section section-alt">
+    <div class="container">
+        <div class="contact-wrap reveal">
+            <span class="section-eyebrow">Get in touch</span>
+            <h2 class="section-title">Let&rsquo;s work together</h2>
+            <p class="section-subtitle">
+                I am open to internships, graduate roles and collaborations in AI, data science and
+                machine learning engineering. The quickest way to reach me is by email.
+            </p>
+
+            <div class="contact-links">
+                <a class="contact-link" href="mailto:mahranamor2@gmail.com">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
+                        <path d="M22 6l-10 7L2 6"></path>
+                    </svg>
+                    mahranamor2@gmail.com
+                </a>
+
+                <a class="contact-link" href="tel:+21692479247">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    +216 92 479 247
+                </a>
+
+                <a class="contact-link" href="https://www.linkedin.com/in/mahrane-amor-77a424224/" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.65h.05a4.16 4.16 0 0 1 3.75-2.06c4 0 4.75 2.64 4.75 6.07V21h-4v-5.42c0-1.29-.02-2.96-1.8-2.96-1.8 0-2.08 1.4-2.08 2.86V21H9z"></path>
+                    </svg>
+                    LinkedIn
+                </a>
+
+                <!-- TODO: replace with your real GitHub username. -->
+                <a class="contact-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.4-4.04-1.4-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.62-2.8 5.64-5.48 5.94.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5z"></path>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ======================= Footer ======================= -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <p style="margin:0">&copy; <span id="year">2026</span> Mahrane AMOR. All rights reserved.</p>
+        <p style="margin:0">Built with plain HTML, CSS &amp; JavaScript.</p>
+    </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 19V5M5 12l7-7 7 7"></path>
+    </svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
