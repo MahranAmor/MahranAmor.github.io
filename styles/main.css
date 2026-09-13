@@ -838,7 +838,8 @@ ul { margin: 0; padding: 0; }
 .quote-body blockquote strong { font-weight: 600; color: var(--text); }
 
 .quote-body .quote-lead {
-  font-size: 1.12rem;
+  font-size: 1.06rem;
+  line-height: 1.75;
   color: var(--text);
   border-left-color: var(--accent);
 }
