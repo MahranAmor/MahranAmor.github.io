@@ -801,89 +801,69 @@ ul { margin: 0; padding: 0; }
 
 /* ---------- Recommendations ---------- */
 .quote-card {
-  position: relative;
   max-width: 860px;
   margin: 0 auto;
-  padding: 40px 36px 32px;
+  padding: 40px 36px;
+  text-align: center;
   background: var(--bg-elev);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
 }
 
-.quote-card::before {
-  content: '\201C';
-  position: absolute;
-  top: 4px;
-  left: 26px;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 5.5rem;
-  line-height: 1;
-  color: var(--accent);
-  opacity: .18;
-  pointer-events: none;
+.quote-header { margin-bottom: 28px; }
+
+.recommender-name {
+  margin-bottom: .5rem;
+  font-size: 1.4rem;
 }
 
-.quote-body { position: relative; }
+.recommender-title {
+  margin-bottom: .45rem;
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.recommender-affiliation {
+  margin-bottom: .2rem;
+  font-size: .9rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.recommendation-date {
+  margin: .7rem 0 0;
+  font-size: .86rem;
+  color: var(--text-subtle);
+}
+
+.quote-body {
+  margin-bottom: 28px;
+  text-align: left;
+}
 
 .quote-body blockquote {
-  margin: 0 0 20px;
-  padding-left: 18px;
-  font-size: 1.02rem;
-  line-height: 1.7;
-  color: var(--text-muted);
-  border-left: 2px solid var(--border);
-}
-.quote-body blockquote:last-of-type { margin-bottom: 28px; }
-.quote-body blockquote strong { font-weight: 600; color: var(--text); }
-
-.quote-body .quote-lead {
+  margin: 0;
   font-size: 1.06rem;
-  line-height: 1.75;
-  color: var(--text);
-  border-left-color: var(--accent);
-}
-
-.quote-author {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding-top: 22px;
-  border-top: 1px solid var(--border);
-}
-
-.quote-avatar {
-  display: grid;
-  flex-shrink: 0;
-  place-items: center;
-  width: 46px;
-  height: 46px;
-  font-size: .88rem;
-  font-weight: 700;
-  letter-spacing: .02em;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border-radius: 50%;
-}
-
-.quote-author .name {
-  margin-bottom: 3px;
-  font-size: .98rem;
-  font-weight: 700;
-}
-.quote-author .role {
-  font-size: .86rem;
-  line-height: 1.5;
-  color: var(--text-subtle);
-}
-/* The job title carries slightly more weight than the affiliation lines. */
-.quote-author .role:first-of-type { color: var(--text-muted); }
-
-.quote-context {
-  margin: 18px 0 0;
-  font-size: .82rem;
   font-style: italic;
-  color: var(--text-subtle);
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+.quote-body blockquote strong {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.quote-highlight {
+  display: inline-block;
+  padding: .85rem 1.7rem;
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--on-accent);
+  background: var(--accent);
+  border-radius: var(--radius);
 }
 
 /* ---------- Contact ---------- */
