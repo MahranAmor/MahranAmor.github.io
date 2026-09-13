@@ -39,8 +39,10 @@ change the title, description, bullet points and tags.
 ## Still to do
 
 - [ ] Drop your CV PDF at `assets/Mahrane_AMOR_CV.pdf`
-- [ ] Replace the placeholder GitHub URL in the Contact section with your real profile
-- [ ] Add live demo / repo links to the project cards (`project-links` blocks)
+- [x] GitHub profile link (github.com/MahranAmor)
+- [x] Repo links for 5G Anomaly Detection, Road Accident Severity, GlioScan, Tayara Scraper
+- [ ] Repo link for Breast Cancer Detection (no matching repo on the profile yet)
+- [ ] Optional: live demo links for GlioScan's FastAPI UI
 - [ ] Optional: add project screenshots to `images/` and swap in `<img>` for the gradient headers
 
 ## Deploy to GitHub Pages
