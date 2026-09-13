@@ -43,6 +43,24 @@ change the title, description, bullet points and tags.
 - [x] Repo links for 5G Anomaly Detection, Road Accident Severity, GlioScan, Tayara Scraper
 - [ ] Repo link for Breast Cancer Detection (no matching repo on the profile yet)
 - [ ] Optional: live demo links for GlioScan's FastAPI UI
+- [ ] Optional: project cover screenshots in `images/` (see below)
+
+## Project cover images
+
+Each project card shows a screenshot if the matching file exists in `images/`,
+and falls back to the gradient + icon header if it does not. Drop in any of:
+
+| File | Card |
+|---|---|
+| `images/youri.png` | YouRi - Agentic RAG Medical Assistant |
+| `images/glioscan.png` | GlioScan - 3D Brain Tumor Segmentation |
+| `images/5g-monitoring.png` | Real-Time Anomaly Detection in 5G Networks |
+| `images/breast-cancer.png` | Breast Cancer Detection with CNNs |
+| `images/road-accident.png` | Prediction of Road Accident Severity |
+| `images/tayara-scraper.png` | Tayara.tn Vehicle Scraper |
+
+Landscape images work best (roughly 3:2 or 16:9, at least 800px wide). `.jpg`
+also works - just change the extension in the `<img src>` for that card.
 - [ ] Optional: add project screenshots to `images/` and swap in `<img>` for the gradient headers
 
 ## Deploy to GitHub Pages
