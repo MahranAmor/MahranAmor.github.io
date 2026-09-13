@@ -410,6 +410,23 @@ ul { margin: 0; padding: 0; }
   color: transparent;
 }
 
+/* Typewriter caret. Sits outside .highlight so the gradient text-clip
+   does not make it invisible. */
+.hero-title .caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.05em;
+  margin-left: 3px;
+  vertical-align: -.14em;
+  background: var(--accent);
+  animation: caret-blink 1.05s steps(1) infinite;
+}
+
+@keyframes caret-blink {
+  0%, 50%      { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
 .hero-subtitle {
   max-width: 660px;
   margin-bottom: 2rem;
@@ -1004,6 +1021,9 @@ ul { margin: 0; padding: 0; }
     transition-duration: .01ms !important;
   }
   .reveal { opacity: 1; transform: none; }
+  /* The blanket animation-duration override above would turn the caret
+     into a strobe, so remove it entirely instead. */
+  .hero-title .caret { display: none; }
 }
 
 /* ---------- Print ---------- */

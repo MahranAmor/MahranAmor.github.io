@@ -195,6 +195,72 @@
     counters.forEach(function (el) { observer.observe(el); });
   }
 
+  /* ---------- Rotating job title (typewriter) ---------- */
+  function initTypewriter() {
+    var el = document.querySelector('.typewriter');
+    if (!el) return;
+
+    var roles;
+    try {
+      roles = JSON.parse(el.getAttribute('data-roles'));
+    } catch (e) {
+      return; // malformed list: leave the static text in place
+    }
+    if (!Array.isArray(roles) || roles.length < 2) return;
+
+    // Reduced motion: keep the first role, no cycling.
+    if (reduceMotion) return;
+
+    var TYPE_MS = 70;      // per character while typing
+    var DELETE_MS = 38;    // per character while deleting
+    var HOLD_FULL = 1900;  // pause on a complete word
+    var HOLD_EMPTY = 320;  // pause before the next word
+
+    var index = 0;
+    var chars = roles[0].length;
+    var deleting = true;   // the first role is already rendered, so erase it first
+    var timer = null;
+
+    function tick() {
+      var word = roles[index];
+
+      if (deleting) {
+        chars -= 1;
+        el.textContent = word.slice(0, chars);
+        if (chars === 0) {
+          deleting = false;
+          index = (index + 1) % roles.length;
+          timer = setTimeout(tick, HOLD_EMPTY);
+          return;
+        }
+        timer = setTimeout(tick, DELETE_MS);
+        return;
+      }
+
+      chars += 1;
+      el.textContent = word.slice(0, chars);
+      if (chars === word.length) {
+        deleting = true;
+        timer = setTimeout(tick, HOLD_FULL);
+        return;
+      }
+      timer = setTimeout(tick, TYPE_MS);
+    }
+
+    // Pause while the tab is hidden so it does not race through the list
+    // in the background and resume mid-word on return.
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        clearTimeout(timer);
+      } else {
+        clearTimeout(timer);
+        timer = setTimeout(tick, 400);
+      }
+    });
+
+    timer = setTimeout(tick, HOLD_FULL);
+  }
+
   /* ---------- Footer year ---------- */
   function initYear() {
     var el = document.getElementById('year');
@@ -209,6 +275,7 @@
     initScrollSpy();
     initReveal();
     initCounters();
+    initTypewriter();
     initYear();
   }
 
