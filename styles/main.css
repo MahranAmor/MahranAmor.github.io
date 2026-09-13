@@ -846,7 +846,7 @@ ul { margin: 0; padding: 0; }
 
 .quote-author {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 14px;
   padding-top: 22px;
   border-top: 1px solid var(--border);
@@ -867,14 +867,17 @@ ul { margin: 0; padding: 0; }
 }
 
 .quote-author .name {
+  margin-bottom: 3px;
   font-size: .98rem;
   font-weight: 700;
 }
 .quote-author .role {
   font-size: .86rem;
-  line-height: 1.45;
+  line-height: 1.5;
   color: var(--text-subtle);
 }
+/* The job title carries slightly more weight than the affiliation lines. */
+.quote-author .role:first-of-type { color: var(--text-muted); }
 
 .quote-context {
   margin: 18px 0 0;
